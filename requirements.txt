@@ -1,0 +1,7 @@
+chromadb
+pypdf
+pytesseract 
+pdf2image 
+pillow
+sentence_transformers 
+streamlit
