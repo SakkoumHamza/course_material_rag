@@ -56,7 +56,6 @@ def extract_text(path):
     return ocr_text
 
 # Find pdfs 
-
 def find_pdfs_recursive(root_folder):
     pdf_files = []
     for dirpath, dirnames, filenames in os.walk(root_folder):
@@ -68,7 +67,6 @@ def find_pdfs_recursive(root_folder):
 
 
 # Vectorize and store to ChromaDB
-
 def vectorize_and_store(documents_dir, collection_name="docs"):
 
     client = chromadb.PersistentClient(path="./chroma")
