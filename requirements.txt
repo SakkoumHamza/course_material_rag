@@ -5,3 +5,8 @@ pdf2image
 pillow
 sentence_transformers 
 streamlit
+langchain
+langchain-ollama
+langchain-community
+langchain-chroma
+ollama
