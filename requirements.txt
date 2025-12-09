@@ -10,3 +10,4 @@ langchain-ollama
 langchain-community
 langchain-chroma
 ollama
+langchain-core
