@@ -1,4 +1,3 @@
-
 import os
 from pypdf import PdfReader
 from sentence_transformers import SentenceTransformer
@@ -104,5 +103,5 @@ def vectorize_and_store(documents_dir, collection_name="docs"):
 # Run
 # -------------
 if __name__ == "__main__":
-    documents_folder = "docs/S1"  # Change to your folder path
+    documents_folder = "docs/s1"  # Change to your folder path
     vectorize_and_store(documents_folder)
