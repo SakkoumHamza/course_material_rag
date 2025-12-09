@@ -1,4 +1,5 @@
 import os
+import sys
 import chromadb
 
 from sentence_transformers import SentenceTransformer
@@ -235,9 +236,9 @@ def create_streamlit_app():
 # Command line interface
 def main():
     """Main function for command line usage"""
-    import sys
     
-    if len(sys.argv) > 1 and sys.argv[1] == "streamlit":
+    # Check if running via streamlit command
+    if 'streamlit' in sys.modules or len(sys.argv) > 1 and sys.argv[1] == "streamlit":
         # Run Streamlit app
         create_streamlit_app()
     else:
@@ -270,4 +271,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # When run via 'streamlit run', this will automatically call create_streamlit_app()
+    create_streamlit_app()
