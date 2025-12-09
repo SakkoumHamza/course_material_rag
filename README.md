@@ -6,6 +6,12 @@ Un système de Retrieval-Augmented Generation (RAG) complet utilisant ChromaDB, 
 
 ![Interface RAG System](assets/Screenshot.png)
 
+---
+
+## 📋 Docker image
+
+![Docker image](assets/docker.png)
+
 ## ✨ Caractéristiques
 
 ### 🔍 **Traitement intelligent des documents**
